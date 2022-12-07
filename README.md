@@ -37,6 +37,11 @@ Step 4: npm install
 - Then select the browser, this will pick the browsers installed on your machine
 - Then select the feature under the cypress\e2e\features, preferably `PIM.cy.js` to run the test
 
+Also tests can be run on the command line with the below comman
+`npx cypress run --record --key 6f458ff2-1fa0-4c42-85a3-5c90c1124957`
+
+This will give the Dashboard view of the test run, with the video and the screenshot captured for the failed tests.
+
 ```
 
 # Tests covered are as follows:

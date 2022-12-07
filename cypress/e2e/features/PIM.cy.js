@@ -19,7 +19,7 @@ describe('Login to Orange HRM website and test the Time module', () => {
     cy.EnterFieldValue('.--name-grouped-field > :nth-child(1) > :nth-child(2) > .oxd-input', "Shruthi")//first name
     cy.EnterFieldValue(':nth-child(2) > :nth-child(2) > .oxd-input', "K")//Middle name
     cy.EnterFieldValue(':nth-child(3) > :nth-child(2) > .oxd-input', "Mukunda")//Last name
-    cy.EnterFieldValue('.oxd-grid-item > .oxd-input-group > :nth-child(2) > .oxd-input','0250')
+    cy.EnterFieldValue('.oxd-grid-item > .oxd-input-group > :nth-child(2) > .oxd-input','0250')//Existing employee ID
     cy.SaveButton()
     cy.get('.oxd-grid-2 > .oxd-grid-item > .oxd-input-group').should('have.text', 'Employee IdEmployee Id already exists')//This is a bug in the Dom
   })
